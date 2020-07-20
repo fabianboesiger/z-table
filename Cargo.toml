@@ -1,9 +1,11 @@
 [package]
 name = "z_table"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["fabianboesiger <boesiger.fabian@outlook.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
-description = "This crate provides a lookup function for the standard normal table, also called unit normal table or Z table."
+description = "Provides a lookup function for the standard normal table, also called Z table."
 repository = "https://github.com/fabianboesiger/z-table/"
 readme = "README.md"
+keywords = ["standard-normal-table", "z-table", "lookup", "distribution", "normal-distribution"]
+categories = ["science"]
