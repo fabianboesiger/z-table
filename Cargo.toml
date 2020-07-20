@@ -7,5 +7,5 @@ license = "MIT OR Apache-2.0"
 description = "Provides a lookup function for the standard normal table, also called Z table."
 repository = "https://github.com/fabianboesiger/z-table/"
 readme = "README.md"
-keywords = ["standard-normal-table", "z-table", "lookup", "distribution", "normal-distribution"]
+keywords = [ "z-table", "lookup", "normal", "standard", "distribution"]
 categories = ["science"]
