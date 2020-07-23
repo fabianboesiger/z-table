@@ -37,5 +37,5 @@ fn test_reverse_lookup_with() {
 }
 
 fn approx_eq(a: f32, b: f32) {
-    assert!((a - b).abs() < 0.0001, "{}", a);
+    assert!((a - b).abs() < 0.0001);
 }
