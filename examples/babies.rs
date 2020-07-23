@@ -1,4 +1,4 @@
-use z_table::lookup_with;
+use z_table::{lookup_with, reverse_lookup_with};
 
 fn main() {
     // Some birth weights newborns in kg.
@@ -11,7 +11,12 @@ fn main() {
     let standard_derivation = variance.sqrt();
 
     println!(
-        "The probability of a newborn to weight more than 3.5 kg is {}%",
-        (1.0 - lookup_with(3.5, mean, standard_derivation)) * 100.0
+        "The probability of a newborn to weight less than 3.5 kg is {} %",
+        lookup_with(3.5, mean, standard_derivation) * 100.0
+    );
+
+    println!(
+        "The weight of a newborn is with a 90 % probability under {} kg",
+        reverse_lookup_with(0.9, mean, standard_derivation)
     );
 }
