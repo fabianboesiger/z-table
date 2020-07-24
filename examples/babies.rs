@@ -1,7 +1,7 @@
 use z_table::{lookup_with, reverse_lookup_with};
 
 fn main() {
-    // Some birth weights newborns in kg.
+    // Some birth weights of newborns in kg.
     let birth_weights: [f32; 5] = [2.5, 2.7, 3.1, 3.4, 3.6];
     let n = birth_weights.len() as f32;
     // Calculate the average weight of a newborn.
