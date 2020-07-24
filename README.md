@@ -1,6 +1,15 @@
 # Z Table
 
-This crate provides lookup functions for the standard normal table, also called Z table. Because the lookup functions are `const`, they can be evaluated at compile time.
+This crate provides lookup functions for the standard normal table, also called Z table. Because the lookup functions are `const fn`, they can be evaluated at compile time. This crate is:
+
+* **Small** in size
+* **Fast**, as it relies on simple table lookups and can be evaluated at compile time
+* **Minimalistic**, only some basic table lookup functions are provided
+
+Keep in mind that this crate isn't the most precise as it only relies on table lookups. The error is roughly 0.1%.
+
+If you need something more precise with more functionaliy, don't use this crate. An alternative would be [statrs](https://crates.io/crates/statrs).
+
 
 ## Example
 
