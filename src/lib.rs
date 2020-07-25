@@ -30,6 +30,7 @@ pub const fn lookup_with(z: f32, mean: f32, standard_derivation: f32) -> f32 {
 /// Given a value of the cumulative distribution function
 /// of the standard normal distribution, returns
 /// the corresponding z value.
+/// Only inputs between and including 0 and 1 are allowed.
 pub const fn reverse_lookup(p: f32) -> f32 {
     assert!(0.0 <= p && p <= 1.0);
     if p >= 0.5 {
@@ -43,6 +44,7 @@ pub const fn reverse_lookup(p: f32) -> f32 {
 /// Given a value of the cumulative distribution function
 /// of the normal distribution with the provided mean and
 /// standard derivation, returns the corresponding z value.
+/// Only inputs between and including 0 and 1 are allowed.
 pub const fn reverse_lookup_with(p: f32, mean: f32, standard_derivation: f32) -> f32 {
     reverse_lookup(p) * standard_derivation + mean
 }

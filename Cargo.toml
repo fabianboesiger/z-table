@@ -1,10 +1,10 @@
 [package]
 name = "z_table"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["fabianboesiger <boesiger.fabian@outlook.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
-description = "Provides a lookup function for the standard normal table, also called Z table."
+description = "Provides lookup functions for the standard normal table, also called Z table."
 repository = "https://github.com/fabianboesiger/z-table/"
 readme = "README.md"
 keywords = [ "z-table", "lookup", "normal", "standard", "distribution"]
