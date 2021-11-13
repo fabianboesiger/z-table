@@ -1,4 +1,3 @@
-#![feature(const_panic)]
 #![feature(const_fn_floating_point_arithmetic)]
 
 #[cfg(test)]
@@ -93,7 +92,8 @@ const fn abs(x: f32) -> f32 {
     }
 }
 
-/// Internal lookup table.
+// Lookup and index in internal lookup table
+// without panicking at invalid indices.
 const fn lookup_index(i: usize) -> f32 {
     if i >= TABLE.len() {
         1.0
